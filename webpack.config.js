@@ -1,9 +1,9 @@
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
-  entry: "./app/components/Main.js",
+  entry: './app/components/Main.js',
   output: {
-    filename: "public/bundle.js"
+    filename: 'public/bundle.js'
   },
   module: {
     loaders: [
@@ -14,6 +14,10 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css']
       }
     ]
   },
