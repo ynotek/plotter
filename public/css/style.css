@@ -1,0 +1,51 @@
+body {
+    font-family: Helvetica;
+}
+
+input[type="text"] {
+    margin-right: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;        /* for single line flex container */
+  align-content: center;      /* for multi-line flex container */
+}
+
+.align-item {
+  margin: auto;
+}
+
+.line {
+    fill: none;
+    stroke: #7dc7f4;
+    stroke-width: 5px;
+
+}
+
+.axis{
+    fill:#bbc7d9;
+    opacity: 1;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+
+}
+
+.axis text {
+    font-size: 14px;
+}
+
+.y-grid .tick{
+    stroke: #4b5f87;
+    opacity: 1;
+}
